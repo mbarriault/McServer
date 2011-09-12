@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CDFDEB5141E662900CD2FCD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDFDEB4141E662900CD2FCD /* Cocoa.framework */; };
+		6CDFDEBF141E662900CD2FCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDEBD141E662900CD2FCD /* InfoPlist.strings */; };
+		6CDFDEC1141E662900CD2FCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC0141E662900CD2FCD /* main.m */; };
+		6CDFDEC5141E662900CD2FCD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC3141E662900CD2FCD /* Credits.rtf */; };
+		6CDFDEC8141E662900CD2FCD /* McServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC7141E662900CD2FCD /* McServerAppDelegate.m */; };
+		6CDFDECB141E662900CD2FCD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC9141E662900CD2FCD /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CDFDEB0141E662900CD2FCD /* McServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDFDEB4141E662900CD2FCD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6CDFDEB7141E662900CD2FCD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6CDFDEB8141E662900CD2FCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6CDFDEB9141E662900CD2FCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6CDFDEBC141E662900CD2FCD /* McServer-Info.plist */ = {isa = PBXFileReference; path = "McServer-Info.plist"; sourceTree = "<group>"; };
+		6CDFDEBE141E662900CD2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDFDEC0141E662900CD2FCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CDFDEC2141E662900CD2FCD /* McServer-Prefix.pch */ = {isa = PBXFileReference; path = "McServer-Prefix.pch"; sourceTree = "<group>"; };
+		6CDFDEC4141E662900CD2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6CDFDEC6141E662900CD2FCD /* McServerAppDelegate.h */ = {isa = PBXFileReference; path = McServerAppDelegate.h; sourceTree = "<group>"; };
+		6CDFDEC7141E662900CD2FCD /* McServerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McServerAppDelegate.m; sourceTree = "<group>"; };
+		6CDFDECA141E662900CD2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CDFDEAD141E662900CD2FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDFDEB5141E662900CD2FCD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CDFDEA5141E662900CD2FCD = {
+			isa = PBXGroup;
+			children = (
+				6CDFDEBA141E662900CD2FCD /* McServer */,
+				6CDFDEB3141E662900CD2FCD /* Frameworks */,
+				6CDFDEB1141E662900CD2FCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CDFDEB1141E662900CD2FCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFDEB0141E662900CD2FCD /* McServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CDFDEB3141E662900CD2FCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFDEB4141E662900CD2FCD /* Cocoa.framework */,
+				6CDFDEB6141E662900CD2FCD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CDFDEB6141E662900CD2FCD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFDEB7141E662900CD2FCD /* AppKit.framework */,
+				6CDFDEB8141E662900CD2FCD /* CoreData.framework */,
+				6CDFDEB9141E662900CD2FCD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6CDFDEBA141E662900CD2FCD /* McServer */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFDEC6141E662900CD2FCD /* McServerAppDelegate.h */,
+				6CDFDEC7141E662900CD2FCD /* McServerAppDelegate.m */,
+				6CDFDEC9141E662900CD2FCD /* MainMenu.xib */,
+				6CDFDEBB141E662900CD2FCD /* Supporting Files */,
+			);
+			path = McServer;
+			sourceTree = "<group>";
+		};
+		6CDFDEBB141E662900CD2FCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFDEBC141E662900CD2FCD /* McServer-Info.plist */,
+				6CDFDEBD141E662900CD2FCD /* InfoPlist.strings */,
+				6CDFDEC0141E662900CD2FCD /* main.m */,
+				6CDFDEC2141E662900CD2FCD /* McServer-Prefix.pch */,
+				6CDFDEC3141E662900CD2FCD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CDFDEAF141E662900CD2FCD /* McServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDFDECE141E662900CD2FCD /* Build configuration list for PBXNativeTarget "McServer" */;
+			buildPhases = (
+				6CDFDEAC141E662900CD2FCD /* Sources */,
+				6CDFDEAD141E662900CD2FCD /* Frameworks */,
+				6CDFDEAE141E662900CD2FCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = McServer;
+			productName = McServer;
+			productReference = 6CDFDEB0141E662900CD2FCD /* McServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CDFDEA7141E662900CD2FCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Guelph";
+			};
+			buildConfigurationList = 6CDFDEAA141E662900CD2FCD /* Build configuration list for PBXProject "McServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6CDFDEA5141E662900CD2FCD;
+			productRefGroup = 6CDFDEB1141E662900CD2FCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CDFDEAF141E662900CD2FCD /* McServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CDFDEAE141E662900CD2FCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDFDEBF141E662900CD2FCD /* InfoPlist.strings in Resources */,
+				6CDFDEC5141E662900CD2FCD /* Credits.rtf in Resources */,
+				6CDFDECB141E662900CD2FCD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CDFDEAC141E662900CD2FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDFDEC1141E662900CD2FCD /* main.m in Sources */,
+				6CDFDEC8141E662900CD2FCD /* McServerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CDFDEBD141E662900CD2FCD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDFDEBE141E662900CD2FCD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDFDEC3141E662900CD2FCD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDFDEC4141E662900CD2FCD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6CDFDEC9141E662900CD2FCD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDFDECA141E662900CD2FCD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CDFDECC141E662900CD2FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6CDFDECD141E662900CD2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6CDFDECF141E662900CD2FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "McServer/McServer-Prefix.pch";
+				INFOPLIST_FILE = "McServer/McServer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6CDFDED0141E662900CD2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "McServer/McServer-Prefix.pch";
+				INFOPLIST_FILE = "McServer/McServer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CDFDEAA141E662900CD2FCD /* Build configuration list for PBXProject "McServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDFDECC141E662900CD2FCD /* Debug */,
+				6CDFDECD141E662900CD2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDFDECE141E662900CD2FCD /* Build configuration list for PBXNativeTarget "McServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDFDECF141E662900CD2FCD /* Debug */,
+				6CDFDED0141E662900CD2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CDFDEA7141E662900CD2FCD /* Project object */;
+}
