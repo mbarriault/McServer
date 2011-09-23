@@ -13,6 +13,9 @@
 		6CDFDEC5141E662900CD2FCD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC3141E662900CD2FCD /* Credits.rtf */; };
 		6CDFDEC8141E662900CD2FCD /* McServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC7141E662900CD2FCD /* McServerAppDelegate.m */; };
 		6CDFDECB141E662900CD2FCD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC9141E662900CD2FCD /* MainMenu.xib */; };
+		6CDFDED3141E68E200CD2FCD /* McServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDED2141E68E200CD2FCD /* McServer.m */; };
+		6CDFDED7141E6AD100CD2FCD /* minecraft_server.jar in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDED5141E6AC500CD2FCD /* minecraft_server.jar */; };
+		6CDFDEDA141E731900CD2FCD /* McServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDED9141E731900CD2FCD /* McServerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,19 @@
 		6CDFDEB7141E662900CD2FCD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		6CDFDEB8141E662900CD2FCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6CDFDEB9141E662900CD2FCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6CDFDEBC141E662900CD2FCD /* McServer-Info.plist */ = {isa = PBXFileReference; path = "McServer-Info.plist"; sourceTree = "<group>"; };
+		6CDFDEBC141E662900CD2FCD /* McServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "McServer-Info.plist"; sourceTree = "<group>"; };
 		6CDFDEBE141E662900CD2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6CDFDEC0141E662900CD2FCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6CDFDEC2141E662900CD2FCD /* McServer-Prefix.pch */ = {isa = PBXFileReference; path = "McServer-Prefix.pch"; sourceTree = "<group>"; };
+		6CDFDEC2141E662900CD2FCD /* McServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "McServer-Prefix.pch"; sourceTree = "<group>"; };
 		6CDFDEC4141E662900CD2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		6CDFDEC6141E662900CD2FCD /* McServerAppDelegate.h */ = {isa = PBXFileReference; path = McServerAppDelegate.h; sourceTree = "<group>"; };
+		6CDFDEC6141E662900CD2FCD /* McServerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = McServerAppDelegate.h; sourceTree = "<group>"; };
 		6CDFDEC7141E662900CD2FCD /* McServerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McServerAppDelegate.m; sourceTree = "<group>"; };
 		6CDFDECA141E662900CD2FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6CDFDED1141E68E200CD2FCD /* McServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McServer.h; sourceTree = "<group>"; };
+		6CDFDED2141E68E200CD2FCD /* McServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McServer.m; sourceTree = "<group>"; };
+		6CDFDED5141E6AC500CD2FCD /* minecraft_server.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = minecraft_server.jar; sourceTree = "<group>"; };
+		6CDFDED8141E731900CD2FCD /* McServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McServerController.h; sourceTree = "<group>"; };
+		6CDFDED9141E731900CD2FCD /* McServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McServerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,11 @@
 		6CDFDEBA141E662900CD2FCD /* McServer */ = {
 			isa = PBXGroup;
 			children = (
+				6CDFDED8141E731900CD2FCD /* McServerController.h */,
+				6CDFDED9141E731900CD2FCD /* McServerController.m */,
+				6CDFDED4141E6AB300CD2FCD /* Resources */,
+				6CDFDED1141E68E200CD2FCD /* McServer.h */,
+				6CDFDED2141E68E200CD2FCD /* McServer.m */,
 				6CDFDEC6141E662900CD2FCD /* McServerAppDelegate.h */,
 				6CDFDEC7141E662900CD2FCD /* McServerAppDelegate.m */,
 				6CDFDEC9141E662900CD2FCD /* MainMenu.xib */,
@@ -100,6 +113,14 @@
 				6CDFDEC3141E662900CD2FCD /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDFDED4141E6AB300CD2FCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFDED5141E6AC500CD2FCD /* minecraft_server.jar */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDFDED7141E6AD100CD2FCD /* minecraft_server.jar in Resources */,
 				6CDFDEBF141E662900CD2FCD /* InfoPlist.strings in Resources */,
 				6CDFDEC5141E662900CD2FCD /* Credits.rtf in Resources */,
 				6CDFDECB141E662900CD2FCD /* MainMenu.xib in Resources */,
@@ -167,6 +189,8 @@
 			files = (
 				6CDFDEC1141E662900CD2FCD /* main.m in Sources */,
 				6CDFDEC8141E662900CD2FCD /* McServerAppDelegate.m in Sources */,
+				6CDFDED3141E68E200CD2FCD /* McServer.m in Sources */,
+				6CDFDEDA141E731900CD2FCD /* McServerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +310,7 @@
 				6CDFDED0141E662900CD2FCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

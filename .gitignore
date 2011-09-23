@@ -1,0 +1,6 @@
+.DS_Store
+McServer/minecraft_server.jar
+build/*
+McServer.xcodeproj/xcuserdata/*
+McServer.xcodeproj/project.xcworkspace/xcuserdata/*
+*.app
