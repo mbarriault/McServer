@@ -21,37 +21,67 @@
     return self;
 }
 
+-(void)awakeFromNib {
+    [bigSwitch setAction:@selector(startStopServer:)];
+    [bigSwitch setTarget:self];
+    [progressIndicator setHidden:YES];
+}
+
 -(void)dealloc {
     [theServer dealloc];
 }
 
 -(IBAction)startServer:(id)sender {
+    [consoleView setString:@""];
+    [self startSpinner];
     [theServer startServer];
+    [self stopSpinner];
 }
 
 -(IBAction)stopServer:(id)sender {
     [theServer stopServer];
-    [consoleView setString:@""];
+}
+
+-(void)startSpinner {
+    [progressIndicator setHidden:NO];
+    [progressIndicator startAnimation:self];
+}
+
+-(void)stopSpinner {
+    [progressIndicator stopAnimation:self];
+    [progressIndicator setHidden:YES];
+}
+
+-(IBAction)startStopServer:(id)sender {
+    if ( bigSwitch.on ) [self startServer:sender];
+    else [self stopServer:sender];
 }
 
 - (IBAction)sendCommand:(id)sender {
-    [theServer sendCommand:[commandField stringValue]];
+    NSString* cmd = [commandField stringValue];
+    if ( [cmd rangeOfString:@"stop"].location != NSNotFound )
+        [bigSwitch setOn:NO];
+    [theServer sendCommand:cmd];
     [commandField setStringValue:@""];
 }
 
--(IBAction)help:(id)sender {
-    [theServer sendCommand:@"help"];
-}
-
 -(void)consoleOutput:(NSString*)output {
-//    NSLog(@"%@", output);
     [consoleView setString:[[consoleView string] stringByAppendingString:output]];
     [consoleView scrollRangeToVisible:NSMakeRange([[consoleView textStorage] length], 0)];
-/*    NSClipView* clip = (NSClipView*)[consoleView superview];
-    NSScrollView* scroll = (NSScrollView*)[clip superview];
-    NSPoint bottomOffset = NSMakePoint(0, [scroll contentSize].height);
-    [clip scrollToPoint:bottomOffset];
-    [scroll reflectScrolledClipView:clip];*/
+}
+
+- (IBAction)sendChat:(id)sender {
+    NSString* chat = [NSString stringWithFormat:@"%@\n", [chatField stringValue]];
+    NSString* cmd = [@"say " stringByAppendingString:chat];
+    [theServer sendCommand:cmd];
+    [self chatOutput:chat byUser:@"Admin"];
+    [chatField setStringValue:@""];
+}
+
+-(void)chatOutput:(NSString*)message byUser:(NSString*)user {
+    NSString* output = [NSString stringWithFormat:@"[%@] %@", user, message];
+    [chatView setString:[[chatView string] stringByAppendingString:output]];
+    [chatView scrollRangeToVisible:NSMakeRange([[chatView textStorage] length], 0)];
 }
 
 @end

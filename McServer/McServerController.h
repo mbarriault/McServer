@@ -8,14 +8,26 @@
 
 #import <Foundation/Foundation.h>
 #import "McServer.h"
+#import <CocoaMondoKit/CocoaMondoKit.h>
 
 @interface McServerController : NSObject {
     McServer* theServer;
-    IBOutlet NSTextField *commandField;
+    
+    IBOutlet NSTextField* commandField;
     IBOutlet NSTextView* consoleView;
+    
+    IBOutlet MondoSwitch* bigSwitch;
+    IBOutlet NSProgressIndicator* progressIndicator;
+
+    IBOutlet NSTextField* chatField;
+    IBOutlet NSTextView* chatView;
+    
 }
+- (IBAction)sendCommand:(id)sender;
+
 - (IBAction)startServer:(id)sender;
 - (IBAction)stopServer:(id)sender;
-- (IBAction)sendCommand:(id)sender;
-- (IBAction)help:(id)sender;
+- (IBAction)startStopServer:(id)sender;
+
+- (IBAction)sendChat:(id)sender;
 @end

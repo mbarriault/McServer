@@ -9,13 +9,20 @@
 #import <Foundation/Foundation.h>
 
 @interface McServer : NSObject {
+    BOOL ready;
+
     NSTask* serverTask;
+    NSArray* command;
+    
     NSPipe* inPipe;
     NSPipe* outPipe;
+    
     NSFileHandle* readHandle;
     NSFileHandle* writeHandle;
-    NSArray* command;
+    
     id Controller;
+    
+    NSMutableArray* users;
 }
 -(void)startServer;
 -(void)stopServer;

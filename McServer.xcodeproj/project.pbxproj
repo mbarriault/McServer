@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CBEF79F142E905700758B8B /* CocoaMondoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEF79E142E905700758B8B /* CocoaMondoKit.framework */; };
+		6CBEF7A2142E923B00758B8B /* CocoaMondoKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6CBEF79E142E905700758B8B /* CocoaMondoKit.framework */; };
+		6CBEF7A9142EA69100758B8B /* McUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBEF7A8142EA69000758B8B /* McUser.m */; };
 		6CDFDEB5141E662900CD2FCD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDFDEB4141E662900CD2FCD /* Cocoa.framework */; };
 		6CDFDEBF141E662900CD2FCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFDEBD141E662900CD2FCD /* InfoPlist.strings */; };
 		6CDFDEC1141E662900CD2FCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDEC0141E662900CD2FCD /* main.m */; };
@@ -18,7 +21,23 @@
 		6CDFDEDA141E731900CD2FCD /* McServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFDED9141E731900CD2FCD /* McServerController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6CBEF7A1142E922E00758B8B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6CBEF7A2142E923B00758B8B /* CocoaMondoKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6CBEF79E142E905700758B8B /* CocoaMondoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaMondoKit.framework; path = ../../Library/Frameworks/CocoaMondoKit.framework; sourceTree = "<group>"; };
+		6CBEF7A7142EA69000758B8B /* McUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McUser.h; sourceTree = "<group>"; };
+		6CBEF7A8142EA69000758B8B /* McUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McUser.m; sourceTree = "<group>"; };
 		6CDFDEB0141E662900CD2FCD /* McServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDFDEB4141E662900CD2FCD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CDFDEB7141E662900CD2FCD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -45,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDFDEB5141E662900CD2FCD /* Cocoa.framework in Frameworks */,
+				6CBEF79F142E905700758B8B /* CocoaMondoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +74,8 @@
 		6CDFDEA5141E662900CD2FCD = {
 			isa = PBXGroup;
 			children = (
+				6CBEF7A7142EA69000758B8B /* McUser.h */,
+				6CBEF7A8142EA69000758B8B /* McUser.m */,
 				6CDFDEBA141E662900CD2FCD /* McServer */,
 				6CDFDEB3141E662900CD2FCD /* Frameworks */,
 				6CDFDEB1141E662900CD2FCD /* Products */,
@@ -71,6 +93,7 @@
 		6CDFDEB3141E662900CD2FCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CBEF79E142E905700758B8B /* CocoaMondoKit.framework */,
 				6CDFDEB4141E662900CD2FCD /* Cocoa.framework */,
 				6CDFDEB6141E662900CD2FCD /* Other Frameworks */,
 			);
@@ -133,6 +156,7 @@
 				6CDFDEAC141E662900CD2FCD /* Sources */,
 				6CDFDEAD141E662900CD2FCD /* Frameworks */,
 				6CDFDEAE141E662900CD2FCD /* Resources */,
+				6CBEF7A1142E922E00758B8B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -191,6 +215,7 @@
 				6CDFDEC8141E662900CD2FCD /* McServerAppDelegate.m in Sources */,
 				6CDFDED3141E68E200CD2FCD /* McServer.m in Sources */,
 				6CDFDEDA141E731900CD2FCD /* McServerController.m in Sources */,
+				6CBEF7A9142EA69100758B8B /* McUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +297,10 @@
 		6CDFDECF141E662900CD2FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "McServer/McServer-Prefix.pch";
 				INFOPLIST_FILE = "McServer/McServer-Info.plist";
@@ -283,6 +312,10 @@
 		6CDFDED0141E662900CD2FCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "McServer/McServer-Prefix.pch";
 				INFOPLIST_FILE = "McServer/McServer-Info.plist";
